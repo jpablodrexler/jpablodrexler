@@ -33,6 +33,7 @@ TECH_DEEP = [
     ("ASP.NET Core", "#512BD4"), ("Angular", "#DD0031"),
     ("Microservices", NEUTRAL), ("Event-Driven Architecture", NEUTRAL),
     ("SOA", NEUTRAL), ("Design Patterns", NEUTRAL), ("SOLID", NEUTRAL),
+    ("Domain-Driven Design", NEUTRAL),
     ("TDD & Unit Testing", NEUTRAL),
     ("DevOps", NEUTRAL), ("Azure", "#0078D4"), ("AWS", "#232F3E"), ("MS SQL Server", "#CC2927"),
     ("PostgreSQL", "#4169E1"), ("Azure DevOps", "#0078D7"),
