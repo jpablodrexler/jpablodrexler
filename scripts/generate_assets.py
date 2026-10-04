@@ -14,7 +14,6 @@ import json
 import math
 import os
 import urllib.request
-from datetime import date
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -57,6 +56,7 @@ LANG_COLORS = {
     "SCSS": "#c6538c", "Python": "#3572A5", "Dockerfile": "#384d54",
     "Batchfile": "#C1F12E",
 }
+CARD_H = 190  # both stats cards share a height so they sit level side by side
 THEMES = {
     "light": dict(bg="#ffffff", border="#d0d7de", title=BLUE, text="#24292f", muted="#57606a", track="#eaeef2"),
     "dark": dict(bg="#0d1117", border="#30363d", title="#58a6ff", text="#e6edf3", muted="#8b949e", track="#21262d"),
@@ -176,7 +176,6 @@ def card_frame(t, w, h, title, inner):
   <rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="8" fill="{t['bg']}" stroke="{t['border']}"/>
   <text x="24" y="34" font-family="{FONT}" font-size="17" font-weight="700" fill="{t['title']}">{escape(title)}</text>
   {inner}
-  <text x="{w-16}" y="{h-12}" text-anchor="end" font-family="{FONT}" font-size="10" fill="{t['muted']}">snapshot {date.today().isoformat()}</text>
 </svg>
 """
 
@@ -191,10 +190,10 @@ def stats_card(t, s):
             f'<text x="24" y="{y}" font-family="{FONT}" font-size="14" fill="{t["muted"]}">{escape(label)}</text>'
             f'<text x="276" y="{y}" text-anchor="end" font-family="{FONT}" font-size="14" font-weight="700" fill="{t["text"]}">{escape(str(value))}</text>'
         )
-    return card_frame(t, 300, 210, "GitHub stats", "".join(out))
+    return card_frame(t, 300, CARD_H, "GitHub stats", "".join(out))
 
 
-def langs_card(t, s, top=6):
+def langs_card(t, s, top=8):
     total = sum(s["langs"].values()) or 1
     items = sorted(s["langs"].items(), key=lambda kv: -kv[1])[:top]
     shown = sum(n for _, n in items)
@@ -212,7 +211,7 @@ def langs_card(t, s, top=6):
         )
     inner = (f'<clipPath id="c"><rect x="24" y="50" width="{bar_w}" height="10" rx="5"/></clipPath>'
              f'<g clip-path="url(#c)">{"".join(bar)}</g>{"".join(legend)}')
-    return card_frame(t, 300, 210, "Top languages", inner)
+    return card_frame(t, 300, CARD_H, "Top languages", inner)
 
 
 def main():
