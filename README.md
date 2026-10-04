@@ -15,7 +15,7 @@ Senior Software Architect and Technical Leader, also working as an AI Developer 
 Specialties: software architecture, design and development with Microsoft technologies, service-oriented architectures, and concurrent / multi-threaded programming.
 
 - 🔭 Currently working on: [**JPPhotoManager**](https://github.com/jpablodrexler/jp-photo-manager), a WPF desktop app plus a Java / Spring Boot and Angular web app (web version since Apr 2026)
-- 🌱 Learning in my spare time: **n8n, React, .NET MAUI, Domain-Driven Design, Android game development**
+- 🌱 Learning in my spare time: **AI-assisted software development process, n8n**
 - 🎓 Information Technologies Analyst, **Universidad ORT Uruguay** (2004–2008)
 - 🗣️ Spanish (native), English (full professional)
 - 📍 Montevideo, Uruguay
@@ -24,7 +24,7 @@ Specialties: software architecture, design and development with Microsoft techno
 
 **Deep knowledge**
 
-<img src="assets/tech-deep.svg" alt="Java & Spring, C#, .NET, ASP.NET Core, Angular, Microservices, Event-Driven Architecture, SOA, Design Patterns, SOLID, TDD & Unit Testing, DevOps, Azure, AWS, MS SQL Server, PostgreSQL, Azure DevOps, GitHub Actions, Git" />
+<img src="assets/tech-deep.svg" alt="Java & Spring, C#, .NET, ASP.NET Core, Angular, Microservices, Event-Driven Architecture, SOA, Design Patterns, SOLID, Domain-Driven Design, TDD & Unit Testing, DevOps, Azure, AWS, MS SQL Server, PostgreSQL, Azure DevOps, GitHub Actions, Git" />
 
 **Working experience**
 
