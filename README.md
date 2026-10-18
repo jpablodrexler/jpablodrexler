@@ -15,6 +15,7 @@ Senior Software Architect and Technical Leader, also working as an AI Developer 
 Specialties: software architecture, design and development with Microsoft technologies, service-oriented architectures, and concurrent / multi-threaded programming.
 
 - 🔭 Currently working on: [**JPPhotoManager**](https://github.com/jpablodrexler/jp-photo-manager), a WPF desktop app plus a Java / Spring Boot and Angular web app (web version since Apr 2026)
+- 🔭 Currently working on: [**backlog-kit**](https://github.com/jpablodrexler/backlog-kit), a set of Claude Code skills that work a plain-markdown backlog from plan to done
 - 🌱 Learning in my spare time: **AI-assisted software development process, n8n**
 - 🎓 Information Technologies Analyst, **Universidad ORT Uruguay** (2004–2008)
 - 🗣️ Spanish (native), English (full professional)
@@ -57,6 +58,7 @@ Specialties: software architecture, design and development with Microsoft techno
 | Project | Description | Stack |
 | --- | --- | --- |
 | [JPPhotoManager](https://github.com/jpablodrexler/jp-photo-manager) | Photo management suite with two apps: a WPF desktop app and a web app. View image galleries, find duplicates, and copy / move / sync images. | C#, .NET 8, WPF, Java, Spring Boot, Angular, PostgreSQL, Kafka, Docker, Kubernetes |
+| [backlog-kit](https://github.com/jpablodrexler/backlog-kit) | Claude Code skills that work a plain-markdown backlog to done: plan, pick, branch, develop with your own phases and reviews, archive. Nothing is committed without you. | Python, Claude Code Skills, Markdown, Gitflow, OpenSpec |
 
 ## 📫 Let's connect
 
