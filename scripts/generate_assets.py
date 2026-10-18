@@ -23,7 +23,7 @@ TITLE = "Senior Software Architect · Technical Leader"
 SUBTITLE = "AI Developer / Full Stack Developer · DevOps"
 ASSETS = Path(__file__).resolve().parent.parent / "assets"
 
-BLUE, PURPLE = "#0e75b6", "#512BD4"
+BLUE, GREEN = "#0e75b6", "#1b8a5a"
 FONT = "'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif"
 
 # (label, colour): brand colours for tools, NEUTRAL for concepts and practices
@@ -87,7 +87,7 @@ def wave(w, h, base, amp, phase, opacity):
 def header():
     w, h = 1000, 215
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="100%" role="img" aria-label="{escape(NAME)} - {escape(TITLE)} - {escape(SUBTITLE)}">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}"/><stop offset="1" stop-color="{PURPLE}"/></linearGradient></defs>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}"/><stop offset="1" stop-color="{GREEN}"/></linearGradient></defs>
   <rect width="{w}" height="{h}" fill="url(#g)"/>
   {wave(w, h, 175, 10, 0.0, 0.10)}
   {wave(w, h, 190, 8, 2.0, 0.14)}
@@ -103,7 +103,7 @@ def footer():
     w, h = 1000, 90
     top = " ".join(f"{i},{34 + 10 * math.sin(i / w * 2 * math.pi + 1):.1f}" for i in range(0, w + 20, 20))
     return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="100%" role="img" aria-label="">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}"/><stop offset="1" stop-color="{PURPLE}"/></linearGradient></defs>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{BLUE}"/><stop offset="1" stop-color="{GREEN}"/></linearGradient></defs>
   <polygon points="0,{h} {top} {w},{h}" fill="url(#g)"/>
 </svg>
 """
